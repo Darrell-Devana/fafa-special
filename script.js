@@ -105,8 +105,17 @@ function runAway(btn) {
   btn.style.margin = '0';
 
   if (noMoveCount >= 5) {
-    btn.style.display = 'none';
+    btn.textContent = 'Fine. No. 😒';
+    btn.onmouseover = null;
+    btn.onclick = showNo;
   }
+}
+
+function showNo() {
+  const messageScreen = document.getElementById('message-screen');
+  const noScreen = document.getElementById('no-screen');
+  messageScreen.style.display = 'none';
+  noScreen.style.display = 'block';
 }
 
 // Confetti

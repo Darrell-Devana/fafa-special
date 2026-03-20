@@ -193,6 +193,53 @@ body {
   position: relative;
 }
 
+/* ── NO SCREEN ── */
+#no-screen {
+  display: none;
+  animation: fade-up 0.6s ease both;
+}
+
+.no-emoji {
+  font-size: 56px;
+  display: block;
+  margin-bottom: 16px;
+  animation: droop 0.6s ease both;
+}
+
+@keyframes droop {
+  from { transform: scale(1.2) rotate(10deg); opacity: 0; }
+  to   { transform: scale(1)   rotate(0deg);  opacity: 1; }
+}
+
+.no-heading {
+  font-size: 1.7rem;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.no-body {
+  font-size: 1rem;
+  color: #aaa;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.reconsider-btn {
+  background: none;
+  border: 2px solid #f48fb1;
+  color: #e91e63;
+  padding: 12px 32px;
+  font-size: 0.95rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.2s, color 0.2s;
+}
+
+.reconsider-btn:hover {
+  background: #fce4ec;
+}
+
 /* ── YES SCREEN ── */
 #yes-screen {
   display: none;
